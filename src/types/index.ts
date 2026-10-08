@@ -1,0 +1,3 @@
+export type Role='CUSTOMER'|'OWNER'|'STAFF'|'ADMIN';
+export type BookingStatus='PENDING'|'CONFIRMED'|'CANCELLED'|'COMPLETED'|'NO_SHOW'|'RESCHEDULED';
+export type Turf={id:string;name:string;description:string|null;area:string|null;city:string|null;latitude?:number|null;longitude?:number|null;cover_image_url:string|null;rating:number;review_count:number;starting_price:number;indoor:boolean;status:string;approval_status:string;address?:string|null;turf_type:string|null;opening_time?:string;closing_time?:string;rules?:string|null;cancellation_policy?:Record<string,unknown>;sports?:{name:string;slug:string}[];facilities?:string[]};
